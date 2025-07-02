@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Фибоначчи Таавар</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔢 Фибоначчигийн Таавар</h1>
+        <p>{{ a }} ба {{ b }} дарааллын дараагийн тоог олоорой?</p>
+        <form method="post">
+            <input type="number" name="guess" required>
+            <input type="submit" value="Хариулах">
+        </form>
+        <p>{{ message }}</p>
+        <a href="/">Буцах</a>
+    </div>
+</body>
+</html>

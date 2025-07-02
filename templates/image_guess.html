@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Зураг Таах</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ Зураг Таах</h1>
+        <img src="{{ url_for('static', filename='sunny.jpg') }}" alt="Guess Image" width="300">
+        <form method="post">
+            <input type="text" name="guess" placeholder="Та юу гэж бодож байна?">
+            <input type="submit" value="Таах">
+        </form>
+        <p>{{ message }}</p>
+        <a href="/">Буцах</a>
+    </div>
+</body>
+</html>

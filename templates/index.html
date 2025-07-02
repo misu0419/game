@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>🎮 Мини Тоглоомууд</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .menu-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            width: 320px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .menu-item {
+            background-color: #ff7f50;
+            color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 12px;
+            text-decoration: none;
+            display: block;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .menu-item:hover {
+            background-color: #ff4500;
+            transform: translateX(10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>🎮 Мини Тоглоомууд</h1>
+        <a class="menu-item" href="/guess_number">1. Санасан Тоог Таах</a>
+        <a class="menu-item" href="/rps">2. Хайч, Чулуу, Даавуу</a>
+        <a class="menu-item" href="/image_guess">3. Зураг Таах</a>
+        <a class="menu-item" href="/fibonacci">4. Фибоначчигийн Таавар</a>
+        <a class="menu-item" href="/maze">5. Төөрдөг Байшин</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Санасан Тоог Таах</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Санасан Тоог Таах (1-10)</h1>
+        <form method="post">
+            <input type="number" name="guess" min="1" max="10" required>
+            <input type="submit" value="Таах">
+        </form>
+        <p>{{ message }}</p>
+        <a href="/">Буцах</a>
+    </div>
+</body>
+</html>
